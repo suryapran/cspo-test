@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="23.173" tests="5" skipped="0" failures="1" errors="0">
+<testcase classname="Export selected request" name="TC_CSPO142_1 Test that a User can successfully login to the application" time="7.448">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Admin".........................passed
+And user clicks the Login button............................................passed
+And User verify the "Home page".............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Export selected request" name="TC_CSPO142_2 Test that a User can successfully navigate to the &quot;Training Request History&quot; page via respective button" time="3.709">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Admin".........................passed
+And user clicks the Login button............................................passed
+Then Click on Special Training drop down menu...............................passed
+Then Click on Training History..............................................passed
+And Verify Training Request History page....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Export selected request" name="TC_CSPO142_3 Test that a User can select start and end dates from calender" time="3.867">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Admin".........................passed
+And user clicks the Login button............................................passed
+Then Click on Special Training drop down menu...............................passed
+Then Click on Training History..............................................passed
+Then Verify Training Request History page...................................passed
+Then Select start date and end date.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Export selected request" name="TC_CSPO142_4 Test that a User can search the request histroy in selected date range" time="3.882">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Admin".........................passed
+And user clicks the Login button............................................passed
+Then Click on Special Training drop down menu...............................passed
+Then Click on Training History..............................................passed
+Then Verify Training Request History page...................................passed
+Then Select start date and end date.........................................passed
+And Click on serach button..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Export selected request" name="TC_CSPO142_5 Test that a User can export the request histroy in selected date range" time="3.909">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Unable to find element with locator By.xpath: /html/body/app-root/div/div/app-training-request-history/div/div/div[1]/button
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: /html/body/app-root/div/div/app-training-request-history/div/div/div[1]/button
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.fdmgroup.homepage.specialtrainingsystem.pages.TrainingRequestHistoryPage.clickExport(TrainingRequestHistoryPage.java:59)
+	at com.fdmgroup.homepage.specialtrainingsystem.stepdefinitions.TrainingRequestHistoryPage_stepdefinitions.click_on_export_button(TrainingRequestHistoryPage_stepdefinitions.java:46)
+	at ✽.Click on export button(file:///C:/Users/Owner/Desktop/CSPO_Automation/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/SpecialTrainingSystem/Sprint_13/CSPO_T5_43_ExportRequest.feature:44)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Admin".........................passed
+And user clicks the Login button............................................passed
+Then Click on Special Training drop down menu...............................passed
+Then Click on Training History..............................................passed
+Then Verify Training Request History page...................................passed
+Then Select start date and end date.........................................passed
+And Click on serach button..................................................passed
+And Click on export button..................................................failed
+]]></system-out>
+</testcase>
+</testsuite>

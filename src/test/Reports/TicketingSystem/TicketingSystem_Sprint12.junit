@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="227.349" tests="41" skipped="0" failures="8" errors="0">
+<testcase classname="FAQ" name="Test that the system redirects Users to FAQ page" time="2.438">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="Test that clicking &quot;see more&quot; link redirects Users to detailed FAQ page" time="21.947">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//h2[contains(text(),'FAQS')]&quot;}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83f7560ea5eb7efd45e905541f5d4b33, findElement {using=xpath, value=.//h2[contains(text(),'FAQS')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56306/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83f7560ea5eb7efd45e905541f5d4b33">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//h2[contains(text(),'FAQS')]"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83f7560ea5eb7efd45e905541f5d4b33, findElement {using=xpath, value=.//h2[contains(text(),'FAQS')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56306/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 83f7560ea5eb7efd45e905541f5d4b33
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.FaqPage.getFaqSeeMoreTitleText(FaqPage.java:34)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.CSPOT3_378_FAQ_stepdefinitions.traineeClicksOnSeeMoreButton(CSPOT3_378_FAQ_stepdefinitions.java:40)
+	at ✽.Trainee clicks on See More button(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPOT3-378_FAQ_feature.feature:21)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+And Trainee clicks on See More button.......................................failed
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="Test that clicking &quot;Create a ticket&quot; link redirects Users to Create Ticket Page" time="21.931">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//h2[contains(text(),'FAQS')]&quot;}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37b15007fd1f96a72cb4516d86b64c7f, findElement {using=xpath, value=.//h2[contains(text(),'FAQS')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56347}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56347/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37b15007fd1f96a72cb4516d86b64c7f">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//h2[contains(text(),'FAQS')]"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [37b15007fd1f96a72cb4516d86b64c7f, findElement {using=xpath, value=.//h2[contains(text(),'FAQS')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56347}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56347/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37b15007fd1f96a72cb4516d86b64c7f
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.FaqPage.getFaqSeeMoreTitleText(FaqPage.java:34)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.CSPOT3_378_FAQ_stepdefinitions.traineeClicksOnSeeMoreButton(CSPOT3_378_FAQ_stepdefinitions.java:40)
+	at ✽.Trainee clicks on See More button(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPOT3-378_FAQ_feature.feature:27)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+And Trainee clicks on See More button.......................................failed
+When Trainee clicks on Create a Ticket button...............................skipped
+Then Trainee should be redirected to the Create Ticket page.................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="Test that FAQ side bar button redirects Trainee to the FAQ page" time="1.899">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks sidebar ticketing system menu and clicks FAQs from the options.passed
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="Test that &quot;See More&quot; link redirects to Create Tickets Page in &quot;Couldn't Connect to server&quot;" time="22.009">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//h2[contains(text(),'Create Ticket')]&quot;}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d84ce9c007408fefa37bbe5939d1a6bb, findElement {using=xpath, value=.//h2[contains(text(),'Create Ticket')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56418/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d84ce9c007408fefa37bbe5939d1a6bb">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//h2[contains(text(),'Create Ticket')]"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d84ce9c007408fefa37bbe5939d1a6bb, findElement {using=xpath, value=.//h2[contains(text(),'Create Ticket')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56418}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56418/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d84ce9c007408fefa37bbe5939d1a6bb
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.CreateTicket.getPageTitle(CreateTicket.java:18)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.CSPOT3_378_FAQ_stepdefinitions.traineeShouldBeRedirectedToTheCreateTicketPage(CSPOT3_378_FAQ_stepdefinitions.java:51)
+	at ✽.Trainee should be redirected to the Create Ticket page(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPOT3-378_FAQ_feature.feature:41)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+And Trainee clicks See More button under Couldn't connect to server.........passed
+Then Trainee should be redirected to the Create Ticket page.................failed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a trainee is able to reopen a ticket with resolved status." time="2.213">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.CSPO_T3_7_Reopen_stepdefintions.traineeClickedOnTheReopenButton(CSPO_T3_7_Reopen_stepdefintions.java:53)
+	at ✽.Trainee clicked on the Reopen button(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPOT3-7_Reopen_feature.feature:18)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Resolved................................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page................passed
+When Trainee clicked on the Reopen button...................................failed
+Then Trainee clicks Yes on the confirmation dialog box......................skipped
+And Trainee click on the tickets page under Ticketing System from the side bar.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a trainee is able to reopen a ticket with closed status" time="3.053">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Closed..................................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page................passed
+When Trainee clicked on the Reopen button...................................passed
+Then Trainee clicks Yes on the confirmation dialog box......................passed
+And Trainee click on the tickets page under Ticketing System from the side bar.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a trainee is able to cancel the reopen ticket process while in resolved status." time="2.135">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.CSPO_T3_7_Reopen_stepdefintions.traineeClickedOnTheReopenButton(CSPO_T3_7_Reopen_stepdefintions.java:53)
+	at ✽.Trainee clicked on the Reopen button(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPOT3-7_Reopen_feature.feature:49)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Resolved................................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page................passed
+When Trainee clicked on the Reopen button...................................failed
+Then Trainee clicks No on the confirmation dialog box.......................skipped
+And Trainee can view Resolved status on the Ticket..........................skipped
+And Trainee click on the tickets page under Ticketing System from the side bar.skipped
+And the Ticket status should be Resolved for the ticket.....................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a trainee is able to cancel the reopen ticket process while in closed status." time="2.164">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.CSPO_T3_7_Reopen_stepdefintions.traineeClickedOnTheReopenButton(CSPO_T3_7_Reopen_stepdefintions.java:53)
+	at ✽.Trainee clicked on the Reopen button(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPOT3-7_Reopen_feature.feature:66)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Closed..................................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page................passed
+When Trainee clicked on the Reopen button...................................failed
+Then Trainee clicks No on the confirmation dialog box.......................skipped
+And Trainee can view Closed status on the Ticket............................skipped
+And Trainee click on the tickets page under Ticketing System from the side bar.skipped
+And the Ticket status should be Closed for the ticket.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a trainee is not able to reopen a ticket with new status." time="2.014">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to New.....................................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page with status New.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a trainee is not able to reopen a ticket with In Progress status." time="2.15">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to In Progress.............................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page with status In Progress.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a trainee is not able to reopen a ticket with Pending status." time="2.097">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Pending.................................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page with status Pending.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a admin is not able to reopen a ticket with new status." time="2.072">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to New.......................................passed
+And Admin clicks on the First Ticket Title..................................passed
+Then Admin should be redirected to the Ticket details page with status New..passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a admin is not able to reopen a ticket with In Progress status." time="2.097">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to In Progress...............................passed
+And Admin clicks on the First Ticket Title..................................passed
+Then Admin should be redirected to the Ticket details page with status In Progress.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a admin is not able to reopen a ticket with Pending status." time="2.028">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to Pending...................................passed
+And Admin clicks on the First Ticket Title..................................passed
+Then Admin should be redirected to the Ticket details page with status Pending.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a admin is not able to reopen a ticket with Resolved status." time="2.074">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to Resolved..................................passed
+And Admin clicks on the First Ticket Title..................................passed
+Then Admin should be redirected to the Ticket details page with status Resolved.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="Test that a admin is not able to reopen a ticket with Closed status." time="2.11">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to Closed....................................passed
+And Admin clicks on the First Ticket Title..................................passed
+Then Admin should be redirected to the Ticket details page with status Closed.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_01 Test that a user can successfully navigate to the Tickets page via respective buttons" time="1.821">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given Ticketing button exists...............................................passed
+When User clicks on Ticketing button........................................passed
+And clicks on Tickets on the Tickets Menu page..............................passed
+Then Tickets should be displayed............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_02 Test that a user can view a column titled Date &amp; Time on Tickets page" time="1.79">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given Ticketing button exists...............................................passed
+When User clicks on Ticketing button........................................passed
+And clicks on Tickets on the Tickets Menu page..............................passed
+Then Date and Time column should be displayed...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_03 Test that a user CAN filter tickets based on the date they were created with a VALID date with the format of mm/dd/yyyy - Example #1.1" time="1.882">
+<failure type="java.lang.AssertionError">
+<![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.FilterTicketsByDate.the_page_should_display_two_tickets(FilterTicketsByDate.java:89)
+	at ✽.the page should display two tickets(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_238_FilterTicketsByDate.feature:24)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/18/2023" and "3/21/2023"...........................passed
+Then the page should display two tickets....................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_03 Test that a user CAN filter tickets based on the date they were created with a VALID date with the format of mm/dd/yyyy - Example #1.2" time="1.986">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/16/2023" and "3/18/2023"...........................passed
+Then the page should display two tickets....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.1" time="1.82">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/21/2023" and "3/18/2023"...........................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.2" time="1.884">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/16/2024" and "3/18/2024"...........................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.3" time="1.882">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/16/2022" and "3/18/2022"...........................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.4" time="1.886">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/d/1999" and "m/12/1022"............................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_01 Test that trainee should be able to view the Ticket Subject input field" time="7.003">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+Then Ticket Subject input field should be displayed.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_02 Test that trainee should be able to view a placeholder text" time="7">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+Then verify that a placeholder text Enter Subject is displayed for the Ticket Subject input field.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_03 Test that trainee should be able to view the Ticket Subject text" time="7.061">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+Then verify that Ticket Subject  should be displayed on the left side of the input field.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_04 Test that trainee should be able to view the tooltip for Ticket Subject input field" time="7.163">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And hover the curser over the Ticket Subject input field....................passed
+Then verify that a tooltip with length validation text exists...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_05 verify that the  Ticket Subject input field tooltip showing the text" time="27.259">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id = 'ngb-tooltip-0']&quot;}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62a2f87633f5d4a8646fedb684967b2c, findElement {using=xpath, value=//*[@id = 'ngb-tooltip-0']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57271/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62a2f87633f5d4a8646fedb684967b2c">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id = 'ngb-tooltip-0']"}
+  (Session info: chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [62a2f87633f5d4a8646fedb684967b2c, findElement {using=xpath, value=//*[@id = 'ngb-tooltip-0']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\munin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57271}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57271/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 62a2f87633f5d4a8646fedb684967b2c
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.CreateTicketPage.getToolTipText(CreateTicketPage.java:64)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.TicketSubjectInputValidation_stepdefinitions.verify_the_tooltip_text_content(TicketSubjectInputValidation_stepdefinitions.java:86)
+	at ✽.verify the tooltip text content(file:///F:/07_Work_Study/04_Coding/03_CSPO/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-377_TicketSubjectInputValidation.feature:56)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And hover the curser over the Ticket Subject input field....................passed
+Then verify the tooltip text content........................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_06 Verify that trainee should not  be able to view the tooltip showing the text" time="7.186">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And Hover the cursor anywhere other than the Ticket Subject input field.....passed
+Then verify that a tooltip with length validation text do not exists........passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_07 Verify that trainee cannot submit" time="7.149">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And populate all the required fields with Subject field less than length five.passed
+Then the Submit button should be disabled...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_08 Verify that trainee can submit a valid string as Ticket Subject" time="7.174">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And populate all the required fields with valid entries.....................passed
+Then the Submit button should be enabled....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select a ticket" name="TC_CSPO423_1 Navigate to the Ticket page" time="4.352">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select a ticket" name="TC_CSPO423_2 Select a ticket" time="4.456">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+Then verify the sort icon of TicketSubject..................................passed
+Then user select any tickets and navigate to Ticket Details page............passed
+]]></system-out>
+</testcase>
+<testcase classname="Select a ticket" name="TC_CSPO423_3 Verify popup icon" time="4.572">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+Then verify the sort icon of TicketSubject..................................passed
+Then user select any tickets and navigate to Ticket Details page............passed
+Then verify the plus and arrow icon displayed...............................passed
+Then send a feedback message................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Select a ticket" name="TC_CSPO423_4 Display popupwindow with preloaded response" time="4.795">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+Then verify the sort icon of TicketSubject..................................passed
+Then user select any tickets and navigate to Ticket Details page............passed
+Then verify the plus and arrow icon displayed...............................passed
+Then send a feedback message................................................passed
+Then user wants to see and close the preloaded response.....................passed
+Then user wants to cancel the ticket........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and sorting ticket based on Ticket Name" name="TC_CSPO423_1 Navigate to the Ticket page" time="4.301">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and sorting ticket based on Ticket Name" name="TC_CSPO423_3 Verify sort icon" time="4.372">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+Then verify the sort icon of TicketSubject..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and sorting ticket based on Ticket Name" name="TC_CSPO423_5 Sort in ascending order by Ticket Name" time="5.437">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+Then verify the sort icon of TicketSubject..................................passed
+Then sort tickets in ascending order by TicketName..........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search and sorting ticket based on Ticket Name" name="TC_CSPO423_7 Sort in ascending order by Ticket Name" time="6.395">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password for "Trainee".......................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given user validate the "Home page" window..................................passed
+Then user navigate to the Ticket Menu page..................................passed
+Then user navigate to the Ticket page.......................................passed
+Then verify the sort icon of TicketSubject..................................passed
+Then sort tickets in descending order by TicketName.........................passed
+]]></system-out>
+</testcase>
+</testsuite>

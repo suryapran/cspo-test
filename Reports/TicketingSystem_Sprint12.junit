@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="575.876" tests="33" skipped="0" failures="12" errors="0">
+<testcase classname="Filter by date range" name="TC_CSPO_243_01 Test that a user can successfully navigate to the Tickets page via respective buttons" time="12.367">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given Ticketing button exists...............................................passed
+When User clicks on Ticketing button........................................passed
+And clicks on Tickets on the Tickets Menu page..............................passed
+Then Tickets should be displayed............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_02 Test that a user can view a column titled Date &amp; Time on Tickets page" time="7.852">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given Ticketing button exists...............................................passed
+When User clicks on Ticketing button........................................passed
+And clicks on Tickets on the Tickets Menu page..............................passed
+Then Date and Time column should be displayed...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_03 Test that a user CAN filter tickets based on the date they were created with a VALID date with the format of mm/dd/yyyy - Example #1.1" time="11.574">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/18/2023" and "3/21/2023"...........................passed
+Then the page should display two tickets....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_03 Test that a user CAN filter tickets based on the date they were created with a VALID date with the format of mm/dd/yyyy - Example #1.2" time="9.372">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/16/2023" and "3/18/2023"...........................passed
+Then the page should display two tickets....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.1" time="7.131">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/21/2023" and "3/18/2023"...........................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.2" time="6.955">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/16/2024" and "3/18/2024"...........................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.3" time="7.269">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/16/2022" and "3/18/2022"...........................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Filter by date range" name="TC_CSPO_243_04 Test that a user CANNOT filter tickets based on the date they were created with a INVALID date with the format of mm/dd/yyyy - Example #1.4" time="7.076">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid bruceLee Trainee email_id and password....................passed
+And user clicks the Login button............................................passed
+Then User BruceLee should navigate to the Home page.........................passed
+Given User is on tickets page...............................................passed
+When User clicks on filter by dates button..................................passed
+And user enters dates "3/d/1999" and "m/12/1022"............................passed
+Then the page should not display any tickets................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_01 Test that trainee should be able to view the Ticket Subject input field" time="14.222">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+Then Ticket Subject input field should be displayed.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_02 Test that trainee should be able to view a placeholder text" time="13.13">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+Then verify that a placeholder text Enter Subject is displayed for the Ticket Subject input field.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_03 Test that trainee should be able to view the Ticket Subject text" time="12.15">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+Then verify that Ticket Subject  should be displayed on the left side of the input field.passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_04 Test that trainee should be able to view the tooltip for Ticket Subject input field" time="12.21">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And hover the curser over the Ticket Subject input field....................passed
+Then verify that a tooltip with length validation text exists...............passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_05 verify that the  Ticket Subject input field tooltip showing the text" time="12.99">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And hover the curser over the Ticket Subject input field....................passed
+Then verify the tooltip text content........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_06 Verify that trainee should not  be able to view the tooltip showing the text" time="13.268">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And Hover the cursor anywhere other than the Ticket Subject input field.....passed
+Then verify that a tooltip with length validation text do not exists........passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_07 Verify that trainee cannot submit" time="18.099">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And populate all the required fields with Subject field less than length five.passed
+Then the Submit button should be disabled...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Ticket subject input field validation" name="TC_CSPO403_08 Verify that trainee can submit a valid string as Ticket Subject" time="32.09">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then User should navigate to the Home page..................................passed
+Given the trainee is on the home page.......................................passed
+And click on Ticketing......................................................passed
+When the trainee is navigated to the Ticket Menu page.......................passed
+And click on Create Ticket..................................................passed
+And populate all the required fields with valid entries.....................passed
+Then the Submit button should be enabled....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="TC_CSPO398_01 Test that the system redirects Users to FAQ page" time="9.664">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="TC_CSPO398_02 Test that clicking &quot;see more&quot; link redirects Users to detailed FAQ page" time="30.238">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;See more&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bcfa565b6aed60e631291dc0bc1109fd, findElement {using=link text, value=See more}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59043}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59043/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcfa565b6aed60e631291dc0bc1109fd">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"See more"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bcfa565b6aed60e631291dc0bc1109fd, findElement {using=link text, value=See more}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59043}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59043/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bcfa565b6aed60e631291dc0bc1109fd
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.FaqPage.clickSeeMore(FaqPage.java:31)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.FAQ_stepdefinitions.traineeClicksOnSeeMoreButton(FAQ_stepdefinitions.java:39)
+	at ✽.Trainee clicks on See More button(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-378_FAQ_feature.feature:21)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+And Trainee clicks on See More button.......................................failed
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="TC_CSPO398_03 Test that clicking &quot;Create a ticket&quot; link redirects Users to Create Ticket Page" time="27.818">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;See more&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [01842ce4851053e17e4c47d63b84d3eb, findElement {using=link text, value=See more}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59117}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59117/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01842ce4851053e17e4c47d63b84d3eb">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"See more"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [01842ce4851053e17e4c47d63b84d3eb, findElement {using=link text, value=See more}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59117}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59117/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 01842ce4851053e17e4c47d63b84d3eb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.FaqPage.clickSeeMore(FaqPage.java:31)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.FAQ_stepdefinitions.traineeClicksOnSeeMoreButton(FAQ_stepdefinitions.java:39)
+	at ✽.Trainee clicks on See More button(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-378_FAQ_feature.feature:27)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+And Trainee clicks on See More button.......................................failed
+When Trainee clicks on Create a Ticket button...............................skipped
+Then Trainee should be redirected to the Create Ticket page.................skipped
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="TC_CSPO398_04 Test that FAQ side bar button redirects Trainee to the FAQ page" time="14.223">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks sidebar ticketing system menu and clicks FAQs from the options.passed
+]]></system-out>
+</testcase>
+<testcase classname="FAQ" name="TC_CSPO398_05 Test that &quot;See More&quot; link redirects to Create Tickets Page in &quot;Couldn't Connect to server&quot;" time="33.425">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;See more&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e93f5368c806445414d1dacdd6b5af0f, findElement {using=link text, value=See more}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59263}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59263/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e93f5368c806445414d1dacdd6b5af0f">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"See more"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e93f5368c806445414d1dacdd6b5af0f, findElement {using=link text, value=See more}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59263}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59263/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e93f5368c806445414d1dacdd6b5af0f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.FaqPage.clickSeeMore(FaqPage.java:31)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.FAQ_stepdefinitions.traineeClicksSeeMoreButtonUnderCouldnTConnectToServer(FAQ_stepdefinitions.java:65)
+	at ✽.Trainee clicks See More button under Couldn't connect to server(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-378_FAQ_feature.feature:40)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+When Trainee clicks on FAQ button...........................................passed
+And Trainee clicks See More button under Couldn't connect to server.........failed
+Then Trainee should be redirected to the Create Ticket page.................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_001 Test that a trainee is able to reopen a ticket with resolved status." time="26.68">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[1]&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [458c53a9a429843608684edeefb4ff43, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59336}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59336/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 458c53a9a429843608684edeefb4ff43">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [458c53a9a429843608684edeefb4ff43, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59336}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59336/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 458c53a9a429843608684edeefb4ff43
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.getFirstTicketIDText(TicketsPage.java:253)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.traineeClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:40)
+	at ✽.Trainee clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:16)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Resolved................................passed
+And Trainee clicks on the First Ticket Title................................failed
+Then Trainee should be redirected to the Ticket details page................skipped
+When Trainee clicked on the Reopen button...................................skipped
+Then Trainee clicks Yes on the confirmation dialog box......................skipped
+And Trainee click on the tickets page under Ticketing System from the side bar.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_002 Test that a trainee is able to reopen a ticket with closed status" time="28.303">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[1]&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [378a5c2856092d6415dbe6abe00070e7, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59404}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59404/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378a5c2856092d6415dbe6abe00070e7">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [378a5c2856092d6415dbe6abe00070e7, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59404}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59404/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 378a5c2856092d6415dbe6abe00070e7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.getFirstTicketIDText(TicketsPage.java:253)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.traineeClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:40)
+	at ✽.Trainee clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:32)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Closed..................................passed
+And Trainee clicks on the First Ticket Title................................failed
+Then Trainee should be redirected to the Ticket details page................skipped
+When Trainee clicked on the Reopen button...................................skipped
+Then Trainee clicks Yes on the confirmation dialog box......................skipped
+And Trainee click on the tickets page under Ticketing System from the side bar.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_003 Test that a trainee is able to cancel the reopen ticket process while in resolved status." time="27.759">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[1]&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [250dc446cbe4e3f37229872759dad11f, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59485}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59485/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 250dc446cbe4e3f37229872759dad11f">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [250dc446cbe4e3f37229872759dad11f, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59485}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59485/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 250dc446cbe4e3f37229872759dad11f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.getFirstTicketIDText(TicketsPage.java:253)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.traineeClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:40)
+	at ✽.Trainee clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:47)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Resolved................................passed
+And Trainee clicks on the First Ticket Title................................failed
+Then Trainee should be redirected to the Ticket details page................skipped
+When Trainee clicked on the Reopen button...................................skipped
+Then Trainee clicks No on the confirmation dialog box.......................skipped
+And Trainee can view Resolved status on the Ticket..........................skipped
+And Trainee click on the tickets page under Ticketing System from the side bar.skipped
+And the Ticket status should be Resolved for the ticket.....................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_004 Test that a trainee is able to cancel the reopen ticket process while in closed status." time="26.505">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[1]&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [a098dfd1509e0664e972fb0a9c26f7ca, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59556}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59556/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098dfd1509e0664e972fb0a9c26f7ca">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [a098dfd1509e0664e972fb0a9c26f7ca, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59556}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59556/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a098dfd1509e0664e972fb0a9c26f7ca
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.getFirstTicketIDText(TicketsPage.java:253)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.traineeClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:40)
+	at ✽.Trainee clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:64)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Closed..................................passed
+And Trainee clicks on the First Ticket Title................................failed
+Then Trainee should be redirected to the Ticket details page................skipped
+When Trainee clicked on the Reopen button...................................skipped
+Then Trainee clicks No on the confirmation dialog box.......................skipped
+And Trainee can view Closed status on the Ticket............................skipped
+And Trainee click on the tickets page under Ticketing System from the side bar.skipped
+And the Ticket status should be Closed for the ticket.......................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_004 Test that a trainee is not able to reopen a ticket with new status." time="8.82">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to New.....................................passed
+And Trainee clicks on the First Ticket Title................................passed
+Then Trainee should be redirected to the Ticket details page with status New.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_005 Test that a trainee is not able to reopen a ticket with In Progress status." time="28.307">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[1]&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [47c0c11587699b6708532d17c37ccf51, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59698}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47c0c11587699b6708532d17c37ccf51">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [47c0c11587699b6708532d17c37ccf51, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59698}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59698/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47c0c11587699b6708532d17c37ccf51
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.getFirstTicketIDText(TicketsPage.java:253)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.traineeClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:40)
+	at ✽.Trainee clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:94)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to In Progress.............................passed
+And Trainee clicks on the First Ticket Title................................failed
+Then Trainee should be redirected to the Ticket details page with status In Progress.skipped
+And The Ticket details page should open and should not display reopen button.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_006 Test that a trainee is not able to reopen a ticket with Pending status." time="26.489">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[1]&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3598dd3266d6bf9e3aa03d2b1fb686c6, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59779}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59779/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3598dd3266d6bf9e3aa03d2b1fb686c6">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[1]"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3598dd3266d6bf9e3aa03d2b1fb686c6, findElement {using=xpath, value=//td[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59779}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59779/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3598dd3266d6bf9e3aa03d2b1fb686c6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.getFirstTicketIDText(TicketsPage.java:253)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.traineeClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:40)
+	at ✽.Trainee clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:107)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid Trainee email_id and password.............................passed
+And user clicks the Login button............................................passed
+Then Trainee should navigate to the Home page...............................passed
+Given Trainee navigate to the ticketing system page.........................passed
+And Trainee navigates to the Tickets Page...................................passed
+When Trainee apply status filter to Pending.................................passed
+And Trainee clicks on the First Ticket Title................................failed
+Then Trainee should be redirected to the Ticket details page with status Pending.skipped
+And The Ticket details page should open and should not display reopen button.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_007 Test that a admin is not able to reopen a ticket with new status." time="7.718">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to New.......................................passed
+And Admin clicks on the First Ticket Title..................................passed
+Then Admin should be redirected to the Ticket details page with status New..passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_008 Test that a admin is not able to reopen a ticket with In Progress status." time="8.627">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to In Progress...............................passed
+And Admin clicks on the First Ticket Title..................................passed
+Then Admin should be redirected to the Ticket details page with status In Progress.passed
+And The Ticket details page should open and should not display reopen button.passed
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_009 Test that a admin is not able to reopen a ticket with Pending status." time="7.856">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;ng-multiselect-dropdown _ngcontent-cdq-c90=&quot;&quot; mattooltip=&quot; Click To Filter By Status &quot; class=&quot;mat-tooltip-trigger hover-effect ng-untouched ng-valid ng-dirty&quot; _nghost-cdq-c44=&quot;&quot; ng-reflect-message=&quot; Click To Filter By Status &quot; aria-describedby=&quot;cdk-describedby-message-cdq-1-6&quot; cdk-describedby-host=&quot;cdq-1&quot; ng-reflect-placeholder=&quot; &quot; ng-reflect-data=&quot;[object Object],[object Object&quot; ng-reflect-model=&quot;&quot; ng-reflect-settings=&quot;[object Object]&quot;&gt;...&lt;/ng-multiselect-dropdown&gt; is not clickable at point (895, 300). Other element would receive the click: &lt;img _ngcontent-cdq-c90=&quot;&quot; src=&quot;assets/images/SortImage.png&quot; class=&quot;img-center hover-effect&quot;&gt;
+  (Session info: MicrosoftEdge=114.0.1823.58)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [79e8e7f28d685957e9bc4069e6ed98b1, clickElement {id=DF44D87B7768A664D710D1BE8D4AD837_element_34}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59972}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59972/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (79e8e7f28d685957e9bc4069e6ed98b1)] -&gt; xpath: //th[5]/div/div/ng-multiselect-dropdown]
+Session ID: 79e8e7f28d685957e9bc4069e6ed98b1">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <ng-multiselect-dropdown _ngcontent-cdq-c90="" mattooltip=" Click To Filter By Status " class="mat-tooltip-trigger hover-effect ng-untouched ng-valid ng-dirty" _nghost-cdq-c44="" ng-reflect-message=" Click To Filter By Status " aria-describedby="cdk-describedby-message-cdq-1-6" cdk-describedby-host="cdq-1" ng-reflect-placeholder=" " ng-reflect-data="[object Object],[object Object" ng-reflect-model="" ng-reflect-settings="[object Object]">...</ng-multiselect-dropdown> is not clickable at point (895, 300). Other element would receive the click: <img _ngcontent-cdq-c90="" src="assets/images/SortImage.png" class="img-center hover-effect">
+  (Session info: MicrosoftEdge=114.0.1823.58)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [79e8e7f28d685957e9bc4069e6ed98b1, clickElement {id=DF44D87B7768A664D710D1BE8D4AD837_element_34}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:59972}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59972/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on windows (79e8e7f28d685957e9bc4069e6ed98b1)] -> xpath: //th[5]/div/div/ng-multiselect-dropdown]
+Session ID: 79e8e7f28d685957e9bc4069e6ed98b1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at jdk.internal.reflect.GeneratedMethodAccessor61.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.clickButtonStatusFilterForAdmin(TicketsPage.java:217)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.adminApplyStatusFilterToPending(Reopen_stepdefintions.java:203)
+	at ✽.Admin apply status filter to Pending(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:145)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to Pending...................................failed
+And Admin clicks on the First Ticket Title..................................skipped
+Then Admin should be redirected to the Ticket details page with status Pending.skipped
+And The Ticket details page should open and should not display reopen button.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_010 Test that a admin is not able to reopen a ticket with Resolved status." time="28.902">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td/a&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [de2177e5f80c0dd37c57a14bc5ccafe1, findElement {using=xpath, value=//td/a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:60031}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60031/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de2177e5f80c0dd37c57a14bc5ccafe1">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td/a"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [de2177e5f80c0dd37c57a14bc5ccafe1, findElement {using=xpath, value=//td/a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:60031}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60031/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de2177e5f80c0dd37c57a14bc5ccafe1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.clickButtonFirstTicketTitle(TicketsPage.java:249)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.adminClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:179)
+	at ✽.Admin clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:159)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to Resolved..................................passed
+And Admin clicks on the First Ticket Title..................................failed
+Then Admin should be redirected to the Ticket details page with status Resolved.skipped
+And The Ticket details page should open and should not display reopen button.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Reopen ticket" name="TC-T3318_012 Test that a admin is not able to reopen a ticket with Closed status." time="35.693">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td/a&quot;}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [71c6a9cf77b800d37d708343f9575141, findElement {using=xpath, value=//td/a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:60114}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60114/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71c6a9cf77b800d37d708343f9575141">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td/a"}
+  (Session info: MicrosoftEdge=114.0.1823.58)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [71c6a9cf77b800d37d708343f9575141, findElement {using=xpath, value=//td/a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 114.0.1823.58, ms:edgeOptions: {debuggerAddress: localhost:60114}, msedge: {msedgedriverVersion: 114.0.1823.58 (913ab82f672f..., userDataDir: C:\Users\Owner\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60114/devtoo..., se:cdpVersion: 114.0.1823.58, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71c6a9cf77b800d37d708343f9575141
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.fdmgroup.homepage.ticketingsystem.pages.TicketsPage.clickButtonFirstTicketTitle(TicketsPage.java:249)
+	at com.fdmgroup.homepage.ticketingsystem.stepdefinitions.Reopen_stepdefintions.adminClicksOnTheFirstTicketTitle(Reopen_stepdefintions.java:179)
+	at ✽.Admin clicks on the First Ticket Title(file:///C:/Users/Owner/eclipse-FDM-PODProject/BOA/fdm_cspo_qe_pod/src/test/resources/Features/HomePage/TicketingSystem/Sprint_12/CSPO_T3-7_Reopen_feature.feature:172)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid System Admin email_id and password........................passed
+And user clicks the Login button............................................passed
+Then Admin should navigate to the Home page.................................passed
+Given Admin navigate to the ticketing system page...........................passed
+And Admin navigates to the Tickets Page.....................................passed
+When Admin apply status filter to Closed....................................passed
+And Admin clicks on the First Ticket Title..................................failed
+Then Admin should be redirected to the Ticket details page with status Closed.skipped
+And The Ticket details page should open and should not display reopen button.skipped
+]]></system-out>
+</testcase>
+</testsuite>

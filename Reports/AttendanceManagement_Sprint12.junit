@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="13.516" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="Checking previous day records feature of the Attendance system" name="TC_CSPO527_03 The left arrow besides the month title should take user to the previous month data" time="2.841">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password.....................................passed
+And user clicks the Login button............................................passed
+Then Trainee Peter should navigate to the Home page.........................passed
+Given User navigates to the calendar page using the calendar button in the side bar attendance dropdown.passed
+And The left arrow besides month title is displayed.........................passed
+When I click on the left arrow..............................................passed
+Then The calendar data with Previous month header should be displayed.......passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking previous day records feature of the Attendance system" name="TC_CSPO527_04 The Right arrow besides the month title should take user to the next month data" time="2.021">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password.....................................passed
+And user clicks the Login button............................................passed
+Then Trainee Peter should navigate to the Home page.........................passed
+Given User navigates to the calendar page using the calendar button in the side bar attendance dropdown to check next month data.passed
+And The Right arrow besides month title is displayed........................passed
+When I click on the Right arrow.............................................passed
+Then The calendar data with Next month header should be displayed...........passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking previous day records feature of the Attendance system" name="TC_CSPO527_05 Attendance overview tab should be displayed for each day in the calendar" time="2.14">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password.....................................passed
+And user clicks the Login button............................................passed
+Then Trainee Peter should navigate to the Home page.........................passed
+Given Attendace dropdown is displayed in the sidebar........................passed
+When I click on the attendance dropdown.....................................passed
+And Click on the calendar button............................................passed
+Then Attendance overview tab should be displayed for sixteenth May in calendar.passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking previous day records feature of the Attendance system" name="TC_CSPO527_07 Pop up window should open up on clicking the attendance overview tab" time="2.069">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password.....................................passed
+And user clicks the Login button............................................passed
+Then Trainee Peter should navigate to the Home page.........................passed
+Given User navigates to the Calendar page by clicking on the calendar button in the side bar attendance dropdwon to view the overview tab.passed
+When I click on the attendance overview tab for sixteenth May...............passed
+Then a pop up window with Title Attendance Overview should be displayed.....passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking previous day records feature of the Attendance system" name="TC_CSPO527_08 The field for Clock In should have time displayed" time="2.225">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password.....................................passed
+And user clicks the Login button............................................passed
+Then Trainee Peter should navigate to the Home page.........................passed
+Given Calendar Page is displayed after clicking on the calendar button in the sidebar menu.passed
+When I click on the attendance overview tab for 16th may to check the clock in time.passed
+Then the field in front of the Clock In label should have a time value......passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking previous day records feature of the Attendance system" name="TC_CSPO527_09 The field for Clock Out should have time displayed" time="2.028">
+<system-out><![CDATA[
+Given User launches the CSPO portal page....................................passed
+When Enters valid email_id and password.....................................passed
+And user clicks the Login button............................................passed
+Then Trainee Peter should navigate to the Home page.........................passed
+Given Calendar Page is displayed after clicking on the calendar button in the sidebar menu to check the clock out time.passed
+When I click on the attendance overview tab for 16th May to check the clock out time.passed
+Then the field in front of the Clock Out label should have a time value.....passed
+]]></system-out>
+</testcase>
+</testsuite>

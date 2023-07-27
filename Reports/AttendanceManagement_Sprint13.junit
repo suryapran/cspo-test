@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.235" tests="6" skipped="0" failures="0" errors="0">
+<testcase classname="As a user, I want to be able to click on the unique reset password link" name="TC_CSPO301_01 Verify forgot password link is clickable on the CSPO page" time="0.021">
+<system-out><![CDATA[
+Given User is on CSPO page..................................................passed
+When User clicks on the forget your password link...........................passed
+Then User should be navigated to find your account page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to click on the unique reset password link" name="TC_CSPO_02 Verify user is able to enter email id in find your" time="0.003">
+<system-out><![CDATA[
+Given User is on CSPO page..................................................passed
+When User clicks on the forget your password link...........................passed
+Given User should be navigated to find your account page....................passed
+And User enters the valid email id..........................................passed
+Then User clicks submit button..............................................passed
+Then User should be navigated to find your account page.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to click on the unique reset password link" name="TC_CSPO302_01 User want to reset password ,by entering valid old - Example #1.1" time="0.01">
+<system-out><![CDATA[
+Given User is password resert page..........................................passed
+When User enters "QAfdmgroup1234!" and "QAfdmgroup1234!"....................passed
+Then Verify if the password is rest by login in CSPO portal.................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to click on the unique reset password link" name="TC_CSPO302_02 Verify User is not able to reset password ,by entering invalid old - Example #1.1" time="0.001">
+<system-out><![CDATA[
+Given User is password resert page..........................................passed
+When User enters "<invalid_new_password>" and "<invalid_confirmnew_password>".passed
+Then Verify if the password is rest by login in CSPO portal.................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to click on the unique reset password link" name="TC_CSPO302_02 Verify User is not able to reset password ,by entering invalid old - Example #1.2" time="0">
+<system-out><![CDATA[
+Given User is password resert page..........................................passed
+When User enters "<invalid_new_password>" and "<invalid_confirmnew_password>".passed
+Then Verify if the password is rest by login in CSPO portal.................passed
+]]></system-out>
+</testcase>
+<testcase classname="As a user, I want to be able to click on the unique reset password link" name="TC_CSPO302_02 Verify User is not able to reset password ,by entering invalid old - Example #1.3" time="0.001">
+<system-out><![CDATA[
+Given User is password resert page..........................................passed
+When User enters "<invalid_new_password>" and "<invalid_confirmnew_password>".passed
+Then Verify if the password is rest by login in CSPO portal.................passed
+]]></system-out>
+</testcase>
+</testsuite>
